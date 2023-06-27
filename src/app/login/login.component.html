@@ -1,0 +1,38 @@
+<div class="login-page ">
+    <div class="login-box login_body">
+        <div class="card">
+            <div class="card-body login-card-body card_padd_reduce">
+                <div class="login-logo logo-sec">
+                    <div class="text-center">
+                        <!-- <img alt="" src="assets/img/EnHomeBuilder-logo.png"> -->
+                        <h1>Login</h1>
+                    </div>
+                </div>
+                <form class="full_frm " [formGroup]="loginForm" (ngSubmit)="login()">
+                    <div class="input-group mb-3">
+                        <input class="form-control from_input " formControlName="email" id="email" name="email"
+                            placeholder="Email" type="email">
+                        <div class="icon_sec">
+                            <i class="bi bi-envelope-fill "></i>
+                            
+
+
+                        </div>
+                    </div>
+                    <div class="input-group mb-3 mr_top"><input class="form-control from_input "
+                            formControlName="password" id="password" name="password" placeholder="Password"
+                            type="password">
+                        <div class="icon_sec">
+                            <i class="bi bi-lock-fill"></i>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 pt-3 ">
+                            <button class="btn btn-dark btn-block sign_btn" type="submit" >Sign In</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
